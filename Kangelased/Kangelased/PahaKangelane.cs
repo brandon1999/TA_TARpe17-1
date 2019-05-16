@@ -11,13 +11,13 @@ namespace Kangelased
         public PahaKangelane(string Nimi, string superNimi, string Voime) : base(Nimi, superNimi, Voime)
         {
         }
-        public string KasutaVoimet()
+        public override void KasutaVoimet()
         {
-            return "paha Kangelane " + AnnaSuperNimi() + " püüab hävitada maailma.";
+            Console.WriteLine($"Paha kangelane { AnnaSuperNimi()} püüab hävitada maailma");
         }
         public override void VoiduKone()
         {
-
+            Console.WriteLine("Keegi pole minust tugevam ja kurjem.");
         }
     }
 }

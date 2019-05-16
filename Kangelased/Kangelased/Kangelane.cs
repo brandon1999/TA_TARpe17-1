@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Kangelased
 {
-	abstract class Kangelane
+	abstract class Kangelane:ISuperVõime
 	{
 		private string _Nimi;
 		private string _Asukoht;
         private string _superNimi;
         private string _Voime;
-        private double _Osavus;
-
-		public Kangelane(string Nimi, string Asukoht)
+        private Random r = new Random();
+        public Kangelane(string Nimi, string Asukoht)
 		{
 			this.Nimi = Nimi;
 			this.Asukoht = Asukoht;
@@ -54,8 +53,9 @@ namespace Kangelased
 		}
         public int rynnak()
         {
-            Random r = new Random();
             return r.Next();
         }
-	}
+
+        abstract public void KasutaVoimet();
+    }
 }

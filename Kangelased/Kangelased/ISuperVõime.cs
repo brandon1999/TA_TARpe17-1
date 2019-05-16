@@ -8,6 +8,6 @@ namespace Kangelased
 {
     public interface ISuperVõime
     {
-
+        void KasutaVoimet();
     }
 }

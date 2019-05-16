@@ -13,13 +13,13 @@ namespace Kangelased
 
         }
 
-        public string KasutaVoimet()
+        public override void KasutaVoimet()
         {
-            return "Hea Kangelane " + AnnaSuperNimi() + " päästab maailma";
+            Console.WriteLine($"heakangelane { AnnaSuperNimi()} proovib päästa maailma");
         }
         public override void VoiduKone()
         {
-            
+            Console.WriteLine("Ärge muretsege, ma päästan teid kõiki alati.");
         }
        
     
