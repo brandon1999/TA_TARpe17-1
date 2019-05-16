@@ -29,7 +29,8 @@ namespace Kangelased
 		}
 		static void Main(string[] args)
 		{
-            
+            HeaKangelane uus = new HeaKangelane("batman", "SuperBatman", "surematu");
+            Console.WriteLine(uus);
 		}
 	}
 }

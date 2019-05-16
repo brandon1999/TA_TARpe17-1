@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kangelased
 {
-    abstract class PahaKangelane:Kangelane
+     class PahaKangelane:Kangelane
     {
         public PahaKangelane(string Nimi, string superNimi, string Voime) : base(Nimi, superNimi, Voime)
         {
@@ -14,6 +14,10 @@ namespace Kangelased
         private string KasutaVoimet()
         {
             return "paha Kangelane " + AnnaSuperNimi + " püüab hävitada maailma.";
+        }
+        public override void VoiduKone()
+        {
+
         }
     }
 }

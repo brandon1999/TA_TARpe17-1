@@ -23,5 +23,9 @@ namespace Kangelased
 		{
 			return base.ToString()+" ja ta on selles "+_Osavus+" protsenti osavam kui teised.";
 		}
-	}
+        public override void VoiduKone()
+        {
+
+        }
+    }
 }
