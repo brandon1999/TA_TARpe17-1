@@ -6,16 +6,37 @@ using System.Threading.Tasks;
 
 namespace Kangelased
 {
-	class Kangelane
+	abstract class Kangelane
 	{
 		private string _Nimi;
 		private string _Asukoht;
+        private string _superNimi;
+        private string _Voime;
 
 		public Kangelane(string Nimi, string Asukoht)
 		{
 			this.Nimi = Nimi;
 			this.Asukoht = Asukoht;
 		}
+        public Kangelane(string superNimi, string Voime, string Nimi)
+        {
+            _superNimi = superNimi;
+            _Voime = Voime;
+            _Nimi = Nimi;
+        }
+        public string AnnaNimi
+        {
+            get => _Nimi;
+        }
+        public string AnnaSuperNimi
+        {
+            get => _superNimi;
+        }
+        public string AnnaVoime
+        {
+            get => _Voime;
+        }
+
 
 		public string Nimi { get => _Nimi; set => _Nimi = value; }
 		public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
