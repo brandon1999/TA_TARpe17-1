@@ -36,9 +36,11 @@ namespace Kangelased
         {
             get => _Voime;
         }
+        public abstract void VoiduKone();
 
+        interface ISuperVoime { }
 
-		public string Nimi { get => _Nimi; set => _Nimi = value; }
+        public string Nimi { get => _Nimi; set => _Nimi = value; }
 		public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
 
 		public virtual int Päästa(int Ohustatuid)
