@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Kangelased
+{
+    abstract class PahaKangelane:Kangelane
+    {
+        public PahaKangelane(string Nimi, string superNimi, string Voime) : base(Nimi, superNimi, Voime)
+        {
+        }
+        private string KasutaVoimet()
+        {
+            return "paha Kangelane " + AnnaSuperNimi + " püüab hävitada maailma.";
+        }
+    }
+}

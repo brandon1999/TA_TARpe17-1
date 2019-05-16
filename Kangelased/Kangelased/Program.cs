@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kangelased
 {
-	class Program
+    class Program
 	{
 		static List<Kangelane> Kangelased=new List<Kangelane>();
 		static void LaeKangelased(string Failinimi)
@@ -23,7 +23,7 @@ namespace Kangelased
 				}
 				else
 				{
-					Kangelased.Add(new Kangelane(nimi, asukoht));
+					// Kangelased.Add(new Kangelane(nimi, asukoht));
 				}
 			}
 		}

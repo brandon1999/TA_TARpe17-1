@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kangelased
 {
-	abstract class SuperKangelane:Kangelane
+     class SuperKangelane:Kangelane
 	{
 		private double _Osavus;
 
