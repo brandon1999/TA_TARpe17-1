@@ -13,14 +13,16 @@ namespace Kangelased
 
         }
 
-        private string KasutaVoimet()
+        public string KasutaVoimet()
         {
-            return "Hea Kangelane " + AnnaSuperNimi + " päästab maailma.";
+            return "Hea Kangelane " + AnnaSuperNimi() + " päästab maailma";
         }
         public override void VoiduKone()
         {
             
         }
+       
+    
 
     }
 }

@@ -29,8 +29,13 @@ namespace Kangelased
 		}
 		static void Main(string[] args)
 		{
-            HeaKangelane uus = new HeaKangelane("batman", "SuperBatman", "surematu");
-            Console.WriteLine(uus);
+            HeaKangelane batman = new HeaKangelane("batman", "SuperBatman", "surematu");
+            Console.WriteLine(batman.KasutaVoimet());
+            PahaKangelane joker = new PahaKangelane("joker", "superJoke", "nähtamatu");
+            Console.WriteLine(joker.KasutaVoimet());
+            Console.WriteLine(batman.Päästa(1000));
+            Console.WriteLine(joker.Päästa(1000));
+            
 		}
 	}
 }

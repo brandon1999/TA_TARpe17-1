@@ -11,9 +11,9 @@ namespace Kangelased
         public PahaKangelane(string Nimi, string superNimi, string Voime) : base(Nimi, superNimi, Voime)
         {
         }
-        private string KasutaVoimet()
+        public string KasutaVoimet()
         {
-            return "paha Kangelane " + AnnaSuperNimi + " püüab hävitada maailma.";
+            return "paha Kangelane " + AnnaSuperNimi() + " püüab hävitada maailma.";
         }
         public override void VoiduKone()
         {

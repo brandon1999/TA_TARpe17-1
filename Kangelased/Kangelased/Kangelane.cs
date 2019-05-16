@@ -12,44 +12,50 @@ namespace Kangelased
 		private string _Asukoht;
         private string _superNimi;
         private string _Voime;
+        private double _Osavus;
 
 		public Kangelane(string Nimi, string Asukoht)
 		{
 			this.Nimi = Nimi;
 			this.Asukoht = Asukoht;
 		}
-        public Kangelane(string superNimi, string Voime, string Nimi)
+        public Kangelane(string Nimi, string superNimi, string Voime)
         {
             _superNimi = superNimi;
             _Voime = Voime;
             _Nimi = Nimi;
         }
-        public string AnnaNimi
+        public string AnnaNimi()
         {
-            get => _Nimi;
+            return _Nimi;
         }
-        public string AnnaSuperNimi
+        public string AnnaSuperNimi()
         {
-            get => _superNimi;
+            return _superNimi;
         }
-        public string AnnaVoime
+        public string AnnaVoime()
         {
-            get => _Voime;
+            return _Voime;
         }
         public abstract void VoiduKone();
-
-        public interface ISuperVoime { }
+ 
+       
 
         public string Nimi { get => _Nimi; set => _Nimi = value; }
 		public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
 
-		public virtual int Päästa(int Ohustatuid)
-		{
-			return (int)Math.Round(Ohustatuid * .95);
-		}
-		public override string ToString()
+        virtual public int Päästa(int ohustatuid)
+        {
+            return (int)Math.Round(ohustatuid * .95);
+        }
+        public override string ToString()
 		{
 			return Nimi + " hoiab " + Asukoht + " turvalisena.";
 		}
+        public int rynnak()
+        {
+            Random r = new Random();
+            return r.Next();
+        }
 	}
 }
